@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", "Open Sans", sans-serif;
+}
+.home-page {
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-position: center;
+      min-height: 200px;  
+    padding: 100px 0px 0px;
+      /* border-bottom: 110px solid #1e202b;  */
+    
+  
+}
+nav{
+    background-color:#1e202b;
+    color: white;
+    height: 250px;
+}
+.site-bar{
+    width: 200px;
+}
+.tagline{
+    font-size: 10px;
+}
+.navbar-nav a{
+margin-left: 20px;
+color: white;
+transition: all 2s;
+padding: 5px 25px;
+}
+.navbar-nav :active{
+    border-radius: 30px;
+    border: 2px solid blue;
+    color: blue;
+    padding: 5px 40px;
+}
+
+.navbar-nav a:hover{
+    border-radius: 30px;
+    border: 2px solid blue;
+}
+.find-location input[type="text"]{
+    padding: 20px 20px 20px 25px;
+    background-color: #1e202b;
+    border-radius: 20px;
+    overflow: hidden;
+    outline: none;
+    
+}
+.find-location input[type="submit"]{
+    position: absolute;
+    left: 79%;
+    top: 10%;
+    color: white;
+    background-color: blue;
+    border-radius: 20px;
+    padding:10px 20px;
+    border: 3px solid transparent;
+   
+}
+.footer-side{
+    position: absolute;
+    left: 77% !important;
+    top: 10%;
+}
+.today-forecast{
+    background-color: #1e202bba;
+}
+.today-forecast-2{
+    background-color: #1e202bf5;
+}
+.today-forecast-3{
+    background-color: #1e202bba;
+}
+.caption{
+   background-color: #1e202b;
+    color: gray;
+    padding: 10px;
+   
+    
+}
+
+.clear{
+    clear: both;
+}
+.location{
+    color: gray;
+}
+.num {
+    font-size: 50px;
+
+}
+.container-span span{
+    color: gray;
+}
+.border-bottom-home-page{
+    height: 350px;
+    background-color: #1e202b;
+}
+.footer{
+   
+     background-color:#1e202b ;
+}
+@media (max-width: 1200px) {
+    .find-location input[type="submit"]{
+        left: 73%;
+        top: 30%;
+
+    }
+    .footer-side{
+        position: absolute;
+        left: 74% !important;
+        top: 10%;
+    }
+    .container-icon {
+        margin-top: 20px;
+    }
+    .find-location input[type="text"]{
+        margin-top: 20px;
+    }
+  }
+@media (max-width: 750px) {
+    .find-location input[type="submit"]{
+        left: 70%;
+
+    }
+    
+       
+  }
