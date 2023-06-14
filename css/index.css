@@ -2,6 +2,12 @@
     box-sizing: border-box;
     font-family: "Roboto", "Open Sans", sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 .home-page {
     background-image: url(../img/banner.png);
     background-size: cover;
@@ -12,6 +18,7 @@
     
   
 }
+/* start style navbar */
 nav{
     background-color:#1e202b;
     color: white;
@@ -26,20 +33,21 @@ nav{
 .navbar-nav a{
 margin-left: 20px;
 color: white;
-transition: all 2s;
-padding: 5px 25px;
+transition: all 0.s;
+padding: 5px 5px;
 }
 .navbar-nav :active{
     border-radius: 30px;
     border: 2px solid blue;
     color: blue;
-    padding: 5px 40px;
+    padding: 5px 4px;
 }
 
 .navbar-nav a:hover{
-    border-radius: 30px;
-    border: 2px solid blue;
+    border-radius: 10px;
+     border-bottom: 2px solid blue; 
 }
+/* End style navbar */
 .find-location input[type="text"]{
     padding: 20px 20px 20px 25px;
     background-color: #1e202b;
@@ -66,12 +74,15 @@ padding: 5px 25px;
 }
 .today-forecast{
     background-color: #1e202bba;
+    padding: 0px 0px !important;
 }
 .today-forecast-2{
     background-color: #1e202bf5;
+    padding: 0px 0px !important;
 }
 .today-forecast-3{
     background-color: #1e202bba;
+    padding: 0px 0px !important;
 }
 .caption{
    background-color: #1e202b;

@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/all.css">
+     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Page icon Link -->
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<section >
+<section > 
+  <!-- Navbar   -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <div class=" site-bar d-flex ">
@@ -38,17 +41,23 @@
           </div>
         </div>
       </nav>
+
+
+      <!-- Home Page -->
     <div class="home-page">
         <div class=" find-location text-center mt-0 form position-relative" >
-          <input type="text" placeholder="find your location" class=" w-75  " id="city"  >
-          <input type="submit" class="" id="find" >
+          <input type="text" placeholder="find your location" class=" w-75  " id="Find_City"  >
+          
         </div>
         <div class=" container">
           <div class="row">
+            
+            <!-- Today's Card -->
+       
             <div class="col-lg-4 today-forecast mt-3 mb-3 ">
               <div class="caption container-fluid w-100 d-flex justify-content-between ">
                 <div id="Day" class="day ">Sunday</div>
-                <div id="date" class="date  ">19February</div>
+                <div id="date" class="date  ">19 February</div>
               </div>
              
               <div id="country" class="location m-3">
@@ -56,7 +65,7 @@
               </div>
               <div class="degree d-flex m-3">
                 <div class="num  text-white">
-                  <span id="num" >
+                  <span id="maxtemp_c" >
                     17
                   </span>
                   <sup>
@@ -66,7 +75,7 @@
 
                 </div>
                 <div>
-                  <img id="icon" src="img/113.webp" alt="sun" class=" w">
+                  <img id="icon"  alt="sun" class=" w">
                 </div>
 
               </div>
@@ -74,64 +83,61 @@
                 Sunny
               </div>
               <div class="container-span mb-3">
-                <span class=" m-2">
-                  <img src="img/icon-umberella.png" alt="">
-                  20%
-                </span>
+                <i class="fas fa-umbrella ms-1 text-white "></i>
+                <span id="humidty" class=" m-2"></span><span class="me-2">%</span>
+
+                
                 <span class="m-2">
                   <img src="img/icon-wind.png" alt="" >
-                  18km/h
+                  <span id="Wind"></span>
+                  km/h
                 </span>
                 <span class=" m-2 ">
                   <img src="img/icon-compass.png" alt="">
-                  East
+                  <span id="Compass"></span>
                 </span>
 
               </div>
 
             </div> 
+
+             <!-- Next Days/2 Cards -->
+
+
             <div class="col-lg-4 today-forecast-2 mt-3 mb-3 ">
               <div class="caption container-fluid w-100 text-center">
-              <div id="day2">sunday</div>
+              <div class="nextDay">sunday</div>
               </div>
               <div class="degree m-3 text-center">
                 <div>
-                  <img id="image" src="img/113.webp" alt="sun" class=" ">
+                  <img class="nextDay_icon" alt="sun" >
                 </div>
-                <div id="num1" class="num  text-white">
-                  17
-                  <sup>
-                    o
-                  </sup>
-                  "c"
-                </div>
+                <h2  class="nexday_degree d-inline-block text-white">
+                </h2><h2 class="d-inline-block text-white"> <sup>o</sup> C</h2>
                 
 
               </div>
-              <div class="custom text-primary m-4 text-center" id="weather-condition1">
+              <div class="custom text-primary m-4 text-center nextDay_description" >
                 Sunny
               </div>
 
             </div> 
+
+             <!-- Next Days/2 Cards -->
             <div class="col-lg-4 today-forecast-3 mt-3 mb-3 ">
               <div class="caption container-fluid w-100 text-center">
-                <div id="day3" class="day ">Sunday</div>
+                <div class="nextDay">Sunday</div>
               </div>
               <div class="degree m-3 text-center">
                 <div>
-                  <img id="image3" src="img/113.webp" alt="sun" class=" w">
+                  <img  class="nextDay_icon"  alt="sun" >
                 </div>
-                <div id="num2" class="num  text-white">
-                  17
-                  <sup>
-                    o
-                  </sup>
-                  "c"
-                </div>
+                <h2 class="nexday_degree d-inline-block text-white"></h2>
+                <h2 class="d-inline-block text-white"> <sup>o</sup> C</h2>
                 
 
               </div>
-              <div  class="custom text-primary m-4 text-center" id="weather-condition2">
+              <div  class="custom text-primary m-4 text-center nextDay_description " >
                 Sunny
               </div>
 
